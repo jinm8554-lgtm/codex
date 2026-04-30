@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <h1 class="logo">我的主页</h1>
+        <ul class="nav-links">
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#about">个人介绍</a></li>
+          <li><a href="#projects">项目展示</a></li>
+          <li><a href="#contact">联系方式</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero container">
+        <p class="hero-tag">你好，欢迎来到我的网站</p>
+        <h2>我正在学习前端开发，持续打造有趣的小项目</h2>
+        <p>
+          这个主页使用纯 HTML、CSS、JavaScript 编写。目标是：代码清晰、结构简单、方便初学者阅读和修改。
+        </p>
+        <a class="hero-button" href="#projects">查看我的项目</a>
+      </section>
+
+      <section id="about" class="section container">
+        <h2>个人介绍</h2>
+        <p>
+          你好，我是一名前端学习者，正在通过小项目练习 HTML、CSS 和 JavaScript。
+          我喜欢把复杂问题拆成简单步骤，然后一步步实现。
+        </p>
+
+        <h3>我正在学习的技能</h3>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>响应式布局</li>
+          <li>Git / GitHub</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>项目展示</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-type">练习项目</p>
+            <h3>待办清单</h3>
+            <p class="project-desc">一个可以添加和删除任务的小工具，帮助我练习 DOM 操作。</p>
+            <p class="project-tech"><strong>使用技术：</strong>HTML、CSS、JavaScript</p>
+            <a class="project-button" href="#" aria-label="查看待办清单项目">查看项目</a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-type">接口练习</p>
+            <h3>天气查询页面</h3>
+            <p class="project-desc">输入城市后显示天气信息，帮助我理解 API 请求的基本流程。</p>
+            <p class="project-tech"><strong>使用技术：</strong>HTML、CSS、JavaScript、Fetch API</p>
+            <a class="project-button" href="#" aria-label="查看天气查询页面项目">查看项目</a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-type">内容整理</p>
+            <h3>学习笔记站点</h3>
+            <p class="project-desc">用静态页面整理学习内容，练习页面结构和样式组织方式。</p>
+            <p class="project-tech"><strong>使用技术：</strong>HTML、CSS、GitHub Pages</p>
+            <a class="project-button" href="#" aria-label="查看学习笔记站点项目">查看项目</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>联系方式</h2>
+        <div class="contact-box">
+          <p><strong>邮箱：</strong><a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p>
+            <strong>GitHub：</strong>
+            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a>
+          </p>
+          <p><strong>学习目标：</strong>持续完成 10 个前端小项目，并整理成可展示的作品集。</p>
+        </div>
+
+        <button id="helloButton" type="button">点我打招呼</button>
+        <p id="helloMessage" class="hello-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 我的个人主页</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
